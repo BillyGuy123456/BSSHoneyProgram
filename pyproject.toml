@@ -1,0 +1,52 @@
+[build-system]
+requires = ["hatchling >= 1.26"]
+build-backend = "hatchling.build"
+[project]
+dynamic = ["version"]
+version = "0.0.1.001"
+name = "BSSHoneyProgram"
+description = "A package for adding honey to BSS the longest running Roblox simulator."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "socket",
+    "requests",
+]
+authors = [
+    {name = "Billy Guy", email = "baguy442@icloud.com"},
+]
+maintainers = [
+    {name = "Piercen Harbutt", email = "?"},
+    {name = "Billy Guy", email = "baguy442@icloud.com"},
+]
+license = "MIT"
+license-files = ["LICENSE", "AUTHORS.md"]
+keywords = ["Roblox", "BSS", "Bee Swarm Simulator", "AR (Augmented Reality)", "BSSAR", "Bee Swarm Simulator Augmented Reality", "Honey", "Automation"]
+classifiers = [
+    "Development Status :: 3 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Utilities",
+]
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "pytest-cov",
+    "black",
+    "flake8",
+    "isort",
+    "mypy",
+]
+[project.scripts]
+ar-user-honeytoadd = "BSSHoneyProgram.main:main"
+roblox-user-honeyadder = "BSSHoneyProgram.main:main"
+[project.gui-scripts]
+omni-gui-script = "BSSHoneyProgram.gui:main"
+[project.urls]
+Homepage = "https://shop.beeswarm.com"
