@@ -33,6 +33,7 @@ classifiers = [
     "Topic :: Software Development :: Libraries",
     "Topic :: Software Development :: Libraries :: Python Modules",
     "Topic :: Utilities",
+    "Topic :: Roblox Development",
 ]
 [project.optional-dependencies]
 dev = [
@@ -50,3 +51,4 @@ roblox-user-honeyadder = "BSSHoneyProgram.main:main"
 omni-gui-script = "BSSHoneyProgram.gui:main"
 [project.urls]
 Homepage = "https://shop.beeswarm.com"
+Code = "https://github.com/BillyGuy123456/BSSHoneyProgram"
